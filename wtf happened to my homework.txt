@@ -1,0 +1,398 @@
+Nik@SP3 MINGW64 ~/Documents/LaunchCoderGirlSTL (main)
+$ cd week_18
+
+Nik@SP3 MINGW64 ~/Documents/LaunchCoderGirlSTL/week_18 (main)
+$ jupyter notebook
+[I 00:33:03.171 NotebookApp] Serving notebooks from local directory: C:\Users\Nik\Documents\LaunchCoderGirlSTL\week_18
+[I 00:33:03.171 NotebookApp] Jupyter Notebook 6.4.4 is running at:
+[I 00:33:03.171 NotebookApp] http://localhost:8888/?token=545d04e0228e9bd42b9e903d40c7d918c5c0a47b04635102
+[I 00:33:03.171 NotebookApp]  or http://127.0.0.1:8888/?token=545d04e0228e9bd42b9e903d40c7d918c5c0a47b04635102
+[I 00:33:03.171 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 00:33:03.234 NotebookApp]
+
+    To access the notebook, open this file in a browser:
+        file:///C:/Users/Nik/AppData/Roaming/jupyter/runtime/nbserver-72-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=545d04e0228e9bd42b9e903d40c7d918c5c0a47b04635102
+     or http://127.0.0.1:8888/?token=545d04e0228e9bd42b9e903d40c7d918c5c0a47b04635102
+C:\Python39\lib\json\encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 00:33:10.957 NotebookApp] Creating new notebook in
+ERROR:asyncio:Exception in callback <TaskWakeupMethWrapper object at 0x000001A3EEAF1310>(<Future finished result=None>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x000001A3EEAF1310>(<Future finished result=None>)>
+Traceback (most recent call last):
+  File "C:\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-33' coro=<HTTP1ServerConnection._server_request_loop() running at C:\Python39\lib\site-packages\tornado\http1connection.py:823> wait_for=<Future finished result=None> cb=[IOLoop.add_future.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\ioloop.py:688]> while another task <Task pending name='Task-37' coro=<MappingKernelManager.start_kernel() running at C:\Python39\lib\site-packages\notebook\services\kernels\kernelmanager.py:176> cb=[IOLoop.add_future.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\ioloop.py:688]> is being executed.
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x000001A3EEAE8370>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001A3EEAE8370>()>
+Traceback (most recent call last):
+  File "C:\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-38' coro=<RequestHandler._execute() running at C:\Python39\lib\site-packages\tornado\web.py:1660> cb=[_HandlerDelegate.execute.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\web.py:2326]> while another task <Task pending name='Task-37' coro=<MappingKernelManager.start_kernel() running at C:\Python39\lib\site-packages\notebook\services\kernels\kernelmanager.py:176> cb=[IOLoop.add_future.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\ioloop.py:688]> is being executed.
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x000001A3ED2DBB50>()
+handle: <Handle <TaskStepMethWrapper object at 0x000001A3ED2DBB50>()>
+Traceback (most recent call last):
+  File "C:\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-9' coro=<HTTP1ServerConnection._server_request_loop() running at C:\Python39\lib\site-packages\tornado\http1connection.py:840> cb=[IOLoop.add_future.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\ioloop.py:688]> while another task <Task pending name='Task-37' coro=<MappingKernelManager.start_kernel() running at C:\Python39\lib\site-packages\notebook\services\kernels\kernelmanager.py:176> cb=[IOLoop.add_future.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\ioloop.py:688]> is being executed.
+C:\Python39\lib\site-packages\jupyter_client\ioloop\manager.py:9: RuntimeWarning: coroutine 'RequestHandler._execute' was never awaited
+  from .restarter import AsyncIOLoopKernelRestarter
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-38' coro=<RequestHandler._execute() running at C:\Python39\lib\site-packages\tornado\web.py:1660> cb=[_HandlerDelegate.execute.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\web.py:2326]>
+ERROR:asyncio:Exception in callback <TaskWakeupMethWrapper object at 0x000001A3ED942310>(<Future finis...a15"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x000001A3ED942310>(<Future finis...a15"\r\n\r\n'>)>
+Traceback (most recent call last):
+  File "C:\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-11' coro=<HTTP1ServerConnection._server_request_loop() running at C:\Python39\lib\site-packages\tornado\http1connection.py:823> wait_for=<Future finished result=b'GET /nbexte...3a15"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\ioloop.py:688]> while another task <Task pending name='Task-2' coro=<KernelManager._async_start_kernel() running at C:\Python39\lib\site-packages\jupyter_client\manager.py:336>> is being executed.
+[I 00:33:13.380 NotebookApp] Kernel started: 82752b08-16f7-4b5c-ad17-3220211e5f9e, name: python3
+[I 00:34:05.616 NotebookApp] Saving file at /README.md
+[W 00:34:18.598 NotebookApp] Forbidden
+[W 00:34:18.600 NotebookApp] 403 GET /api/sessions?_=1643437985270 (::1) 2.000000ms referer=http://localhost:8888/tree
+[W 00:34:18.605 NotebookApp] Forbidden
+[W 00:34:18.606 NotebookApp] 403 GET /api/terminals?_=1643437985271 (::1) 3.000000ms referer=http://localhost:8888/tree
+[W 00:34:24.921 NotebookApp] Forbidden
+[W 00:34:24.921 NotebookApp] 403 POST /api/contents (::1) 1.000000ms referer=http://localhost:8888/tree
+[W 00:34:35.468 NotebookApp] Forbidden
+[W 00:34:35.469 NotebookApp] 403 POST /api/contents (::1) 2.000000ms referer=http://localhost:8888/tree
+[W 00:34:35.562 NotebookApp] Forbidden
+[W 00:34:35.562 NotebookApp] 403 GET /api/sessions?_=1643437985272 (::1) 1.000000ms referer=http://localhost:8888/tree
+[W 00:34:35.567 NotebookApp] Forbidden
+[W 00:34:35.570 NotebookApp] 403 GET /api/terminals?_=1643437985273 (::1) 7.000000ms referer=http://localhost:8888/tree
+[W 00:35:12.883 NotebookApp] Forbidden
+[W 00:35:12.884 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992537 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:35:12.889 NotebookApp] Forbidden
+[W 00:35:12.890 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:37:12.863 NotebookApp] Forbidden
+[W 00:37:12.864 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992538 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:37:12.869 NotebookApp] Forbidden
+[W 00:37:12.869 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 0.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:39:12.904 NotebookApp] Forbidden
+[W 00:39:12.905 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992539 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:39:12.909 NotebookApp] Forbidden
+[W 00:39:12.910 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:41:12.881 NotebookApp] Forbidden
+[W 00:41:12.882 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992540 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:41:12.889 NotebookApp] Forbidden
+[W 00:41:12.889 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:43:12.884 NotebookApp] Forbidden
+[W 00:43:12.884 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992541 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:43:12.899 NotebookApp] Forbidden
+[W 00:43:12.899 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:45:12.865 NotebookApp] Forbidden
+[W 00:45:12.866 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992542 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:45:12.870 NotebookApp] Forbidden
+[W 00:45:12.871 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:46:36.479 NotebookApp] Forbidden
+[W 00:46:36.479 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992543 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:46:36.489 NotebookApp] Forbidden
+[W 00:46:36.490 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:47:13.321 NotebookApp] Forbidden
+[W 00:47:13.322 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992544 (::1) 3.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:47:13.346 NotebookApp] Forbidden
+[W 00:47:13.347 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:49:13.322 NotebookApp] Forbidden
+[W 00:49:13.323 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992545 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:49:13.346 NotebookApp] Forbidden
+[W 00:49:13.346 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:51:12.863 NotebookApp] Forbidden
+[W 00:51:12.863 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992546 (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:51:12.868 NotebookApp] Forbidden
+[W 00:51:12.869 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:53:12.879 NotebookApp] Forbidden
+[W 00:53:12.880 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992547 (::1) 4.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:53:12.896 NotebookApp] Forbidden
+[W 00:53:12.896 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:55:12.883 NotebookApp] Forbidden
+[W 00:55:12.884 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992548 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:55:12.897 NotebookApp] Forbidden
+[W 00:55:12.898 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:57:12.872 NotebookApp] Forbidden
+[W 00:57:12.873 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992549 (::1) 4.030000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:57:12.894 NotebookApp] Forbidden
+[W 00:57:12.895 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:59:12.868 NotebookApp] Forbidden
+[W 00:59:12.869 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992550 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 00:59:12.884 NotebookApp] Forbidden
+[W 00:59:12.885 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:01:12.873 NotebookApp] Forbidden
+[W 01:01:12.874 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992551 (::1) 2.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:01:12.894 NotebookApp] Forbidden
+[W 01:01:12.894 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:03:12.878 NotebookApp] Forbidden
+[W 01:03:12.879 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992552 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:03:12.896 NotebookApp] Forbidden
+[W 01:03:12.896 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:05:12.879 NotebookApp] Forbidden
+[W 01:05:12.881 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992553 (::1) 3.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:05:12.897 NotebookApp] Forbidden
+[W 01:05:12.897 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:07:12.879 NotebookApp] Forbidden
+[W 01:07:12.881 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992554 (::1) 3.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:07:12.896 NotebookApp] Forbidden
+[W 01:07:12.897 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:09:12.876 NotebookApp] Forbidden
+[W 01:09:12.878 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992555 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:09:12.896 NotebookApp] Forbidden
+[W 01:09:12.897 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 0.980000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:11:12.880 NotebookApp] Forbidden
+[W 01:11:12.881 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992556 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:11:12.919 NotebookApp] Forbidden
+[W 01:11:12.920 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:13:01.046 NotebookApp] Forbidden
+[W 01:13:01.047 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992557 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:13:01.075 NotebookApp] Forbidden
+[W 01:13:01.076 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 4.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:13:12.872 NotebookApp] Forbidden
+[W 01:13:12.873 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992558 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:13:12.895 NotebookApp] Forbidden
+[W 01:13:12.895 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:15:12.879 NotebookApp] Forbidden
+[W 01:15:12.881 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992559 (::1) 3.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:15:12.896 NotebookApp] Forbidden
+[W 01:15:12.896 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:17:12.893 NotebookApp] Forbidden
+[W 01:17:12.893 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992560 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:17:12.898 NotebookApp] Forbidden
+[W 01:17:12.899 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 2.010000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:19:12.893 NotebookApp] Forbidden
+[W 01:19:12.894 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992561 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:19:12.899 NotebookApp] Forbidden
+[W 01:19:12.899 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:21:12.885 NotebookApp] Forbidden
+[W 01:21:12.886 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992562 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:21:12.892 NotebookApp] Forbidden
+[W 01:21:12.892 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 0.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:23:12.871 NotebookApp] Forbidden
+[W 01:23:12.871 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992563 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:23:12.877 NotebookApp] Forbidden
+[W 01:23:12.877 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:25:12.866 NotebookApp] Forbidden
+[W 01:25:12.867 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992564 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:25:12.882 NotebookApp] Forbidden
+[W 01:25:12.882 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:27:12.887 NotebookApp] Forbidden
+[W 01:27:12.887 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992565 (::1) 0.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:27:12.902 NotebookApp] Forbidden
+[W 01:27:12.902 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:29:12.879 NotebookApp] Forbidden
+[W 01:29:12.881 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992566 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:29:12.900 NotebookApp] Forbidden
+[W 01:29:12.901 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:31:12.864 NotebookApp] Forbidden
+[W 01:31:12.864 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992567 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:31:12.869 NotebookApp] Forbidden
+[W 01:31:12.869 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:33:12.873 NotebookApp] Forbidden
+[W 01:33:12.874 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992568 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:33:12.894 NotebookApp] Forbidden
+[W 01:33:12.895 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:35:12.891 NotebookApp] Forbidden
+[W 01:35:12.891 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992569 (::1) 1.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:35:12.906 NotebookApp] Forbidden
+[W 01:35:12.906 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:37:12.883 NotebookApp] Forbidden
+[W 01:37:12.884 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992570 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:37:12.898 NotebookApp] Forbidden
+[W 01:37:12.899 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:39:12.880 NotebookApp] Forbidden
+[W 01:39:12.881 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992571 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:39:12.898 NotebookApp] Forbidden
+[W 01:39:12.898 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:41:12.880 NotebookApp] Forbidden
+[W 01:41:12.881 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992572 (::1) 3.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:41:12.897 NotebookApp] Forbidden
+[W 01:41:12.898 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:43:12.862 NotebookApp] Forbidden
+[W 01:43:12.863 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992573 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:43:12.889 NotebookApp] Forbidden
+[W 01:43:12.889 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:45:12.868 NotebookApp] Forbidden
+[W 01:45:12.868 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992574 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:45:12.883 NotebookApp] Forbidden
+[W 01:45:12.883 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:47:12.881 NotebookApp] Forbidden
+[W 01:47:12.882 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992575 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:47:12.897 NotebookApp] Forbidden
+[W 01:47:12.897 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:49:12.868 NotebookApp] Forbidden
+[W 01:49:12.870 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992576 (::1) 4.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:49:12.893 NotebookApp] Forbidden
+[W 01:49:12.894 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:51:12.873 NotebookApp] Forbidden
+[W 01:51:12.874 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992577 (::1) 2.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:51:12.887 NotebookApp] Forbidden
+[W 01:51:12.887 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.980000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:53:12.881 NotebookApp] Forbidden
+[W 01:53:12.882 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992578 (::1) 3.030000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:53:12.909 NotebookApp] Forbidden
+[W 01:53:12.909 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:53:54.710 NotebookApp] Forbidden
+[W 01:53:54.711 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992579 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:53:54.719 NotebookApp] Forbidden
+[W 01:53:54.720 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:55:12.876 NotebookApp] Forbidden
+[W 01:55:12.877 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992580 (::1) 5.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:55:12.907 NotebookApp] Forbidden
+[W 01:55:12.908 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.980000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:57:12.869 NotebookApp] Forbidden
+[W 01:57:12.870 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992581 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:57:12.884 NotebookApp] Forbidden
+[W 01:57:12.885 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.010000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:59:13.312 NotebookApp] Forbidden
+[W 01:59:13.312 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992582 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 01:59:13.333 NotebookApp] Forbidden
+[W 01:59:13.333 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:01:12.866 NotebookApp] Forbidden
+[W 02:01:12.867 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992583 (::1) 1.010000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:01:12.882 NotebookApp] Forbidden
+[W 02:01:12.883 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:03:12.867 NotebookApp] Forbidden
+[W 02:03:12.868 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992584 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:03:12.885 NotebookApp] Forbidden
+[W 02:03:12.886 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:05:12.866 NotebookApp] Forbidden
+[W 02:05:12.866 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992585 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:05:12.881 NotebookApp] Forbidden
+[W 02:05:12.881 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:07:12.864 NotebookApp] Forbidden
+[W 02:07:12.865 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992586 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:07:12.881 NotebookApp] Forbidden
+[W 02:07:12.881 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:09:12.882 NotebookApp] Forbidden
+[W 02:09:12.883 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992587 (::1) 3.010000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:09:12.910 NotebookApp] Forbidden
+[W 02:09:12.910 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:11:12.866 NotebookApp] Forbidden
+[W 02:11:12.866 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992588 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:11:12.880 NotebookApp] Forbidden
+[W 02:11:12.880 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.010000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:13:12.885 NotebookApp] Forbidden
+[W 02:13:12.887 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992589 (::1) 5.990000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:13:12.912 NotebookApp] Forbidden
+[W 02:13:12.912 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:15:12.865 NotebookApp] Forbidden
+[W 02:15:12.866 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992590 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:15:12.882 NotebookApp] Forbidden
+[W 02:15:12.882 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:15:50.371 NotebookApp] Forbidden
+[W 02:15:50.372 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992591 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:15:50.383 NotebookApp] Forbidden
+[W 02:15:50.384 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:16:48.300 NotebookApp] Forbidden
+[W 02:16:48.301 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992592 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:16:48.321 NotebookApp] Forbidden
+[W 02:16:48.322 NotebookApp] 403 PUT /api/contents/Week_18_Group_Activity.ipynb (::1) 1.020000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:16:53.737 NotebookApp] Forbidden
+[W 02:16:53.742 NotebookApp] 403 GET /api/sessions?_=1643437985274 (::1) 3.990000ms referer=http://localhost:8888/tree
+[W 02:16:53.752 NotebookApp] Forbidden
+[W 02:16:53.753 NotebookApp] 403 GET /api/terminals?_=1643437985275 (::1) 3.000000ms referer=http://localhost:8888/tree
+[I 02:17:06.559 NotebookApp] Starting buffering for 82752b08-16f7-4b5c-ad17-3220211e5f9e:66fb0aa91b164ed0bde665ee47bb5ddb
+[W 02:17:06.561 NotebookApp] Forbidden
+[W 02:17:06.562 NotebookApp] 403 DELETE /api/sessions/33f8846e-08d2-4ffb-8d6f-6fa4854f98b0 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:17:09.580 NotebookApp] Forbidden
+[W 02:17:09.581 NotebookApp] 403 GET /api/contents/Week_18_Group_Activity.ipynb?content=0&_=1643437992593 (::1) 1.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[W 02:17:14.247 NotebookApp] Forbidden
+[W 02:17:14.247 NotebookApp] 403 GET /api/sessions?_=1643437985276 (::1) 1.000000ms referer=http://localhost:8888/tree
+[W 02:17:14.249 NotebookApp] Forbidden
+[W 02:17:14.250 NotebookApp] 403 GET /api/terminals?_=1643437985277 (::1) 2.000000ms referer=http://localhost:8888/tree
+[I 02:17:18.993 NotebookApp] 302 GET /tree (::1) 3.000000ms
+[I 02:17:58.251 NotebookApp] Interrupted...
+[I 02:17:58.253 NotebookApp] Shutting down 1 kernel
+[I 02:17:58.255 NotebookApp] Kernel shutdown: 82752b08-16f7-4b5c-ad17-3220211e5f9e
+[I 02:17:59.023 NotebookApp] Shutting down 0 terminals
+
+Nik@SP3 MINGW64 ~/Documents/LaunchCoderGirlSTL/week_18 (main)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/Week_18_Class_Notes-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/Week_18_Group_Activity-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Week_18_Class_Notes.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Week_18_Group_Activity.ipynb.
+The file will have its original line endings in your working directory
+
+Nik@SP3 MINGW64 ~/Documents/LaunchCoderGirlSTL/week_18 (main)
+$ git commit -m 'group activity'
+[main b1c85b0] group activity
+ 5 files changed, 119 insertions(+), 1 deletion(-)
+ create mode 100644 .ipynb_checkpoints/Week_18_Class_Notes-checkpoint.ipynb
+ create mode 100644 .ipynb_checkpoints/Week_18_Group_Activity-checkpoint.ipynb
+ create mode 100644 Week_18_Class_Notes.ipynb
+ create mode 100644 Week_18_Group_Activity.ipynb
+
+Nik@SP3 MINGW64 ~/Documents/LaunchCoderGirlSTL/week_18 (main)
+$ git push https://github.com/N-J-Miller/Week_18.git
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.13 KiB | 1.13 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/N-J-Miller/Week_18.git
+   4c7615d..b1c85b0  main -> main
+
+Nik@SP3 MINGW64 ~/Documents/LaunchCoderGirlSTL/week_18 (main)
+$ git add .
+
+Nik@SP3 MINGW64 ~/Documents/LaunchCoderGirlSTL/week_18 (main)
+$ git commit -m 'just checking'
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Nik@SP3 MINGW64 ~/Documents/LaunchCoderGirlSTL/week_18 (main)
+$ jupyter notebook
+[I 02:19:49.114 NotebookApp] Serving notebooks from local directory: C:\Users\Nik\Documents\LaunchCoderGirlSTL\week_18
+[I 02:19:49.114 NotebookApp] Jupyter Notebook 6.4.4 is running at:
+[I 02:19:49.114 NotebookApp] http://localhost:8888/?token=8dc4c29f47ef4837b0603d13defd1e5d41058c3dffce0a79
+[I 02:19:49.114 NotebookApp]  or http://127.0.0.1:8888/?token=8dc4c29f47ef4837b0603d13defd1e5d41058c3dffce0a79
+[I 02:19:49.114 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 02:19:49.161 NotebookApp]
+
+    To access the notebook, open this file in a browser:
+        file:///C:/Users/Nik/AppData/Roaming/jupyter/runtime/nbserver-7928-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=8dc4c29f47ef4837b0603d13defd1e5d41058c3dffce0a79
+     or http://127.0.0.1:8888/?token=8dc4c29f47ef4837b0603d13defd1e5d41058c3dffce0a79
+C:\Python39\lib\json\encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+ERROR:asyncio:Exception in callback <TaskWakeupMethWrapper object at 0x0000020EE7EB0E80>(<Future finis...e50"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x0000020EE7EB0E80>(<Future finis...e50"\r\n\r\n'>)>
+Traceback (most recent call last):
+  File "C:\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-1' coro=<HTTP1ServerConnection._server_request_loop() running at C:\Python39\lib\site-packages\tornado\http1connection.py:823> wait_for=<Future finished result=b'GET /api/co...7e50"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\ioloop.py:688]> while another task <Task pending name='Task-2' coro=<KernelManager._async_start_kernel() running at C:\Python39\lib\site-packages\jupyter_client\manager.py:331>> is being executed.
+[I 02:19:55.236 NotebookApp] Kernel started: 2b20e71d-f4b7-48cf-899d-f434a468bb02, name: python3
+[W 02:20:28.781 NotebookApp] Notebook Week_18_Class_Notes.ipynb is not trusted
+[I 02:20:29.045 NotebookApp] Kernel started: 992a2e43-8e9a-493b-8db0-76c83d6d0090, name: python3
+[I 02:20:34.565 NotebookApp] Starting buffering for 992a2e43-8e9a-493b-8db0-76c83d6d0090:143867dd670b412e8b6d58c107e2ef85
+[I 02:20:40.555 NotebookApp] Kernel shutdown: 2b20e71d-f4b7-48cf-899d-f434a468bb02
+[I 02:20:40.590 NotebookApp] Starting buffering for 2b20e71d-f4b7-48cf-899d-f434a468bb02:a92e1fae178d4e6d8a4cd7d223989baa
+ERROR:asyncio:Exception in callback <TaskWakeupMethWrapper object at 0x0000020EE78C61F0>(<Future finis...e50"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x0000020EE78C61F0>(<Future finis...e50"\r\n\r\n'>)>
+Traceback (most recent call last):
+  File "C:\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-28' coro=<HTTP1ServerConnection._server_request_loop() running at C:\Python39\lib\site-packages\tornado\http1connection.py:823> wait_for=<Future finished result=b'DELETE /api...7e50"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at C:\Python39\lib\site-packages\tornado\ioloop.py:688]> while another task <Task pending name='Task-91' coro=<KernelManager._async_shutdown_kernel() running at C:\Python39\lib\site-packages\jupyter_client\manager.py:442>> is being executed.
+[I 02:20:42.799 NotebookApp] Kernel shutdown: 992a2e43-8e9a-493b-8db0-76c83d6d0090
+[I 02:21:55.143 NotebookApp] Saving file at /Week_18_Group_Activity.ipynb
+[W 02:22:04.227 NotebookApp] 404 DELETE /api/sessions/bd18d079-0dea-446b-b0a9-808b56c86290 (::1): Session not found: session_id='bd18d079-0dea-446b-b0a9-808b56c86290'
+[W 02:22:04.227 NotebookApp] Session not found: session_id='bd18d079-0dea-446b-b0a9-808b56c86290'
+[W 02:22:04.228 NotebookApp] 404 DELETE /api/sessions/bd18d079-0dea-446b-b0a9-808b56c86290 (::1) 2.000000ms referer=http://localhost:8888/notebooks/Week_18_Group_Activity.ipynb
+[I 02:22:04.270 NotebookApp] Kernel started: 0b7a1f8b-d66c-4bd6-be64-6603b1646cf2, name: python3
+[W 02:22:58.070 NotebookApp] Notebook Week_18_Class_Notes.ipynb is not trusted
+[I 02:22:58.336 NotebookApp] Kernel started: 660a5972-81c9-4d1e-beb5-b0c5c93c283b, name: python3
+[W 02:23:18.346 NotebookApp] Notebook Week_18_Group_Activity.ipynb is not trusted
+[W 02:24:10.583 NotebookApp] 404 GET /notebooks/Untitled.ipynb?kernel_name=python3 (::1): No such file or directory: Untitled.ipynb
+[W 02:24:10.625 NotebookApp] 404 GET /notebooks/Untitled.ipynb?kernel_name=python3 (::1) 41.970000ms referer=None
+[I 02:24:33.286 NotebookApp] Starting buffering for 660a5972-81c9-4d1e-beb5-b0c5c93c283b:4b914d5d0cc747c88e4d75dec66b5310
+[I 02:24:40.439 NotebookApp] Starting buffering for 0b7a1f8b-d66c-4bd6-be64-6603b1646cf2:a92e1fae178d4e6d8a4cd7d223989baa
+
